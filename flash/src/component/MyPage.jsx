@@ -34,6 +34,24 @@ export default function MyPage() {
             </SectionContainer>
         </Selection>
       </Profile>
+        <SectionTitle>내 모임</SectionTitle>
+        <Content>
+            <Selection>
+                <Img src="/assets/img2.png" />
+                <Title>공차 시켜 먹을 사람?<People>2/8</People></Title>
+                <Address>대구 달성군 구지면</Address>
+            </Selection>
+            <Selection>
+                <Img src="/assets/img3.png" />
+                <Title>플래너 프로젝트 할 사람?<People>5/9</People></Title>
+                <Address>대구 달성군 구지면</Address>
+            </Selection>
+            <Selection>
+                <Img src="/assets/img5.png" />
+                <Title>프로젝트 할 사람 모여라<People>4/7</People></Title>
+                <Address>대구 달성군 구지면</Address>
+            </Selection>
+        </Content>
     </PageContainer>
   )
 }
@@ -41,7 +59,6 @@ const PageContainer = styled.div`
   width: 1230px;
   height: 100%;
   margin: auto;
-  display: flex;
 `;
 const Profile = styled.div`
   width: 100%;
@@ -87,7 +104,6 @@ const SectionContent = styled.p`
   margin: 0px;
   text-align: left;
 `;
-
 const Button = styled.button`
   color: white;
   border: none;
@@ -97,3 +113,29 @@ const Button = styled.button`
   width: 130px;
   height: 40px;
 `;
+const Page = styled.p`
+    font-size: 30px;
+    text-align: left;
+    margin: 0px;
+`
+const Content = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+`
+const Img = styled.img`
+    width: 100%;
+`
+const Title = styled.p`
+    font-size: 20px;
+    margin: 0px;
+`
+const People = styled.span`
+    float: right;
+`
+const Address = styled.p`
+    font-size: 16px;
+    color: #7D7D7D;
+    margin: 0px;
+`

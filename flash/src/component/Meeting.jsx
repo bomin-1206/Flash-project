@@ -43,7 +43,6 @@ export default function Meeting() {
         </Content>
         <Plus onClick={()=>{ navigate('/makemeeting') }}>+</Plus>
         <Buttons>
-            <Button>전</Button>
             <Button style={{backgroundColor: '#FFDF36', color: 'white'}}>1</Button>
             <Button>2</Button>
             <Button>3</Button>
@@ -51,7 +50,8 @@ export default function Meeting() {
             <Button>5</Button>
             <Button>6</Button>
             <Button>7</Button>
-            <Button>후</Button>
+            <Button>8</Button>
+            <Button>9</Button>
         </Buttons>
     </Background>
   )

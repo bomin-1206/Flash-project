@@ -41,7 +41,7 @@ function Navbar() {
         <Input />
         <Link href="/">홈</Link>
         <Link href="/meeting">모임</Link>
-        <Link>내 정보</Link>
+        <Link href="/mypage">내 정보</Link>
       </Content>
       <Logout
         href="/signin"
